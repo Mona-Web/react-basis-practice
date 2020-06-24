@@ -1,15 +1,17 @@
 {
   "compilerOptions": {
     "outDir": "./dist/",
-    "sourceMap": true,
-    "strict": true,
-    "noImplicitReturns": true,
-    "noImplicitAny": true,
-    "module": "es6",
-    "moduleResolution": "node",
-    "target": "es5",
-    "allowJs": true,
-    "jsx": "react"
+    "sourceMap": true, // 生成相应的 .map 文件
+    "strict": true, // 启用所有严格类型检查选项
+    "noImplicitReturns": true, // 函数所有路径非必须有显式 return
+    "noImplicitAny": true, // 允许隐式 any
+    "module": "es6", // 指定模块代码生成
+    "moduleResolution": "node", // 使用 Node.js 风格解析模块
+    "target": "es5", // 指定 ECMAScript 版本
+    "allowJs": true, // 允许编译 JavaScript 文件
+    "jsx": "react", // 在.tsx文件中支持 JSX
+    "allowSyntheticDefaultImports": true, // 允许引入没有默认导出的模块
+    "experimentalDecorators": true // 启用对 ES 装饰器的实验性支持
   },
-  "include": ["./src/**/*"]
+  "include": ["./src/**/*"] // TypeScript 文件进行类型检查
 }

@@ -1,10 +1,25 @@
 import * as React from 'react'
+import ComponentText from './containers/ComponentTest'
+import StateTest from './containers/StateTest'
+import HooksTest from './containers/HooksTest'
+import PropsTest from './containers/PropsTest'
+import ContextTest from './containers/ContextTest'
+// import HocTest from './containers/HocTest'
+import ErrorBoundaryTest from './containers/ErrorBoundaryTest'
 
-interface Props {}
-
-class App extends React.Component<Props> {
+class App extends React.Component {
   render() {
-    return <div>hello, this is react-basis-practice</div>
+    return (
+      <>
+        {/* <ComponentText></ComponentText> */}
+        {/* <StateTest></StateTest> */}
+        {/* <HooksTest></HooksTest> */}
+        {/* <PropsTest></PropsTest> */}
+        {/* <ContextTest></ContextTest> */}
+        {/* <HocTest></HocTest> */}
+        <ErrorBoundaryTest></ErrorBoundaryTest>
+      </>
+    )
   }
 }
 

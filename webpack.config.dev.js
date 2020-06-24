@@ -15,6 +15,9 @@ module.exports = webpackMerge(webpackConfigCommon, {
       // 将本地 /api/xxx 代理到 localhost:3000/api/xxx
       '/api': 'http://localhost:3000'
     }
+  },
+  optimization: {
+    usedExports: true // 在开发模式下配置 tree shaking
   }
 
   //   // !自动刷新 devServer自动开启
