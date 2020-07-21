@@ -5,9 +5,7 @@ interface Props {
   version?: string
 }
 
-interface State {
-
-}
+interface State {}
 
 // const WithProject = (Comps: React.ComponentClass) => {
 //   return (props: Props) => (
@@ -34,7 +32,7 @@ class Hoc2 extends Component<Props, State> {
     return (
       <div>
         <div>Hoc2:</div>
-        {/* <div>{`${this.props.project} @ ${this.props.version}`}</div> */}
+        <div>{`${this.props.project} @ ${this.props.version}`}</div>
       </div>
     )
   }

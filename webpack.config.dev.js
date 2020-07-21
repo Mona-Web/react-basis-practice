@@ -1,8 +1,11 @@
 const webpackMerge = require('webpack-merge')
 const webpackConfigCommon = require('./webpack.config.common')
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
+  .BundleAnalyzerPlugin
 
 module.exports = webpackMerge(webpackConfigCommon, {
   mode: 'development',
+  devtool: 'cheap-module-eval-source-map',
   devServer: {
     port: 8080,
     progress: true, // 显示打包的进度条
@@ -16,6 +19,7 @@ module.exports = webpackMerge(webpackConfigCommon, {
       '/api': 'http://localhost:3000'
     }
   },
+  plugins: [new BundleAnalyzerPlugin()],
   optimization: {
     usedExports: true // 在开发模式下配置 tree shaking
   }
