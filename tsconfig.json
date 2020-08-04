@@ -5,7 +5,7 @@
     "strict": true, // 启用所有严格类型检查选项
     "noImplicitReturns": true, // 函数所有路径非必须有显式 return
     "noImplicitAny": true, // 允许隐式 any
-    "module": "es6", // 指定模块代码生成
+    "module": "esnext", // 指定模块代码生成
     "moduleResolution": "node", // 使用 Node.js 风格解析模块
     "target": "es5", // 指定 ECMAScript 版本
     "allowJs": true, // 允许编译 JavaScript 文件
